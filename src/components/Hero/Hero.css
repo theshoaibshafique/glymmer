@@ -1,0 +1,70 @@
+.logo {
+  font-weight: bold;
+  font-size: 10vmin;
+  margin-bottom: 180px;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.connectWallet {
+  position: relative;
+}
+
+.connectWalletbtn {
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  border-image-source: linear-gradient(
+    90deg,
+    rgba(51, 49, 50, 1) 1%,
+    rgba(56, 37, 99, 1) 24%,
+    rgba(74, 4, 253, 1) 67%,
+    rgba(74, 4, 253, 1) 67%
+  );
+  padding: 15px 20px 15px 100px;
+  border-left: none;
+  background: rgb(51, 49, 50);
+  background: linear-gradient(
+    90deg,
+    rgba(51, 49, 50, 1) 27%,
+    rgba(22, 101, 165, 1) 37%,
+    rgba(35, 78, 186, 1) 48%,
+    rgba(74, 4, 253, 1) 67%,
+    rgba(74, 4, 253, 1) 67%
+  );
+  color: #fff;
+  text-align: left;
+  cursor: pointer;
+  margin-bottom: 80px;
+}
+
+/* .connectWalletbtn:hover {
+} */
+
+[before-text]::before {
+  content: attr(before-text);
+  position: absolute;
+  top: 40px;
+  left: 0;
+}
+
+.btnTitle {
+  font-size: 4vmin;
+  margin-bottom: 5px;
+}
+
+.walletAddressContainer {
+  position: relative;
+}
+
+.walletAddress {
+  padding-left: 80px;
+  line-height: 2;
+}
+
+[address-text]::before {
+  content: attr(address-text);
+  position: absolute;
+  top: 20px;
+  left: 0;
+}

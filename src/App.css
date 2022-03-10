@@ -1,0 +1,52 @@
+.App {
+  display: flex;
+}
+
+.leftSide {
+  flex: 1.2;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+
+.rightSide {
+  position: fixed;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  right: 0;
+}
+
+.faucetAnimation img {
+  height: 99vh;
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  position: absolute;
+  text-align: end;
+  width: 250px;
+  left: 50%;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 4vmin;
+  color: inherit;
+  font-weight: lighter;
+}
+
+a:hover,
+a:focus {
+  color: #fccd03;
+  border-bottom: 1px solid #fccd03;
+}
