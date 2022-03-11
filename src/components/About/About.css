@@ -1,0 +1,22 @@
+.about {
+  line-height: 1.5;
+  padding-left: 80px;
+}
+.about-text {
+  font-size: 4vmin;
+}
+
+.about div {
+  margin-bottom: 40px;
+}
+
+.aboutContainer {
+  position: relative;
+}
+
+[about-text]::before {
+  content: attr(about-text);
+  position: absolute;
+  top: 40px;
+  left: 0;
+}

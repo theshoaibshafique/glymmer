@@ -4,7 +4,10 @@ import "./Hero.css";
 const Hero = () => {
   return (
     <div className="Hero">
-      <div className="logo">Glymmer</div>
+      <div className="logo">
+        <img src="./glymmer-logo.png" alt="Logo" />
+        <p>a crypto faucet / a web3 experiment</p>
+      </div>
 
       <div className="connectWallet">
         <button className="connectWalletbtn" before-text="Connect">

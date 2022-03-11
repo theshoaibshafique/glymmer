@@ -24,3 +24,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+a {
+  text-decoration: none;
+  font-size: 4vmin;
+  color: inherit;
+  font-weight: lighter;
+}
+
+a:hover,
+a:focus {
+  color: #fccd03;
+  border-bottom: 1px solid #fccd03;
+}

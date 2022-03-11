@@ -1,13 +1,14 @@
 .App {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .leftSide {
-  flex: 1.2;
-  padding-left: 40px;
+  padding-left: 60px;
   display: flex;
   flex-direction: column;
   gap: 200px;
+  width: 60%;
 }
 
 .rightSide {
@@ -38,15 +39,38 @@
   margin-bottom: 10px;
 }
 
-a {
-  text-decoration: none;
-  font-size: 4vmin;
-  color: inherit;
-  font-weight: lighter;
-}
+@media screen and (max-width: 768px) {
+  .App {
+    gap: 100px;
+  }
+  .leftSide {
+    padding-left: 20px;
+    gap: 100px;
+    width: 100%;
+  }
 
-a:hover,
-a:focus {
-  color: #fccd03;
-  border-bottom: 1px solid #fccd03;
+  .rightSide {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    right: auto;
+  }
+
+  .faucetAnimation img {
+    display: none;
+  }
+  .footerLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    text-align: end;
+    width: 100%;
+    left: 15%;
+  }
 }

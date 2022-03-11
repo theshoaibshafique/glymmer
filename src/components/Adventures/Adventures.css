@@ -1,0 +1,44 @@
+.adventuresContainer {
+  position: relative;
+}
+
+[adventures-text]::before {
+  content: attr(adventures-text);
+  position: absolute;
+  top: 20px;
+  left: -40px;
+}
+
+.adventures {
+  padding-left: 80px;
+  display: flex;
+  gap: 120px;
+}
+
+.heading {
+  font-weight: bold;
+  font-size: 6vmin;
+}
+
+.experiments,
+.work {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.heading2 {
+  font-weight: bold;
+  font-size: 4vmin;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .adventures {
+    flex-direction: column;
+  }
+  [adventures-text]::before {
+    top: 6px;
+    left: -20px;
+  }
+}

@@ -1,9 +1,15 @@
 .logo {
-  font-weight: bold;
-  font-size: 10vmin;
   margin-bottom: 180px;
   margin-top: 40px;
   margin-left: 40px;
+}
+
+.logo p {
+  padding-left: 20px;
+}
+
+.logo img {
+  width: 300px;
 }
 
 .connectWallet {
@@ -67,4 +73,10 @@
   position: absolute;
   top: 20px;
   left: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .logo {
+    margin-bottom: 100px;
+  }
 }
