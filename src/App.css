@@ -1,6 +1,7 @@
 .App {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .leftSide {
@@ -28,7 +29,7 @@
 .footerLinks {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
   position: absolute;
   text-align: end;
   width: 250px;
