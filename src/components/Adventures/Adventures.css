@@ -24,13 +24,18 @@
 .work {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
 }
 
 .heading2 {
   font-weight: bold;
   font-size: 4vmin;
   margin-top: 20px;
+}
+
+.subtitle {
+  font-weight: bold;
+  font-size: 3vmin;
 }
 
 @media screen and (max-width: 768px) {

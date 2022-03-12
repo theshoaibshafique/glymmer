@@ -1,10 +1,45 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+
 import "./About.css";
 const About = () => {
+  const variants = {
+    hidden: {
+      opacity: 0,
+      translateY: 100,
+    },
+    visible: {
+      opacity: 1,
+      translateY: 0,
+      transition: {
+        staggerChildren: 0.5,
+        type: "spring",
+        duration: 1.5,
+      },
+    },
+  };
+
+  const controls = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    }
+  }, [controls, inView]);
+
   return (
     <div>
       <div className="aboutContainer">
-        <div className="about" about-text="About">
+        <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={controls}
+          variants={variants}
+          className="about"
+          about-text="About"
+        >
           <p>An experiment of theCountess.eth</p>
           <div>
             <p className="about-text">
@@ -23,7 +58,7 @@ const About = () => {
               a $MATIC / $GLYMR faucet.
             </p>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

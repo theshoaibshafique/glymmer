@@ -35,6 +35,10 @@
   left: 50%;
 }
 
+.footerLinks a {
+  font-size: 3.5vmin;
+}
+
 .title {
   margin-bottom: 10px;
 }
