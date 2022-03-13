@@ -88,7 +88,9 @@ const Adventures = () => {
             >
               <p className="subtitle">{item.subtitle}</p>
               <p className="heading2">{item.title}</p>
-              <a href={item.link}>{item.linkTitle}</a>
+              <a href={item.link} className="adventureLink">
+                {item.linkTitle}
+              </a>
             </motion.div>
           ))}
         </div>
@@ -105,7 +107,9 @@ const Adventures = () => {
             >
               <p className="subtitle">{item.subtitle}</p>
               <p className="heading2">{item.title}</p>
-              <a href={item.link}>{item.linkTitle}</a>
+              <a href={item.link} className="adventureLink">
+                {item.linkTitle}
+              </a>
             </motion.div>
           ))}
         </div>
