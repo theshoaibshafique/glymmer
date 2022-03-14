@@ -1,8 +1,11 @@
 import React, { useEffect } from "react";
+// @ Framer Motion for animations
 import { useAnimation, motion } from "framer-motion";
+// @ To Know if component is in view port
 import { useInView } from "react-intersection-observer";
 import "./Adventures.css";
 const Adventures = () => {
+  // @ Array of objects for experiments
   const experiments = [
     {
       id: 1,
@@ -27,6 +30,7 @@ const Adventures = () => {
     },
   ];
 
+  // @ Array of objects for work
   const work = [
     {
       id: 1,
@@ -52,6 +56,7 @@ const Adventures = () => {
     },
   ];
 
+  // @ Config for animations
   const variants = {
     hidden: {
       opacity: 0,
@@ -63,6 +68,7 @@ const Adventures = () => {
     },
   };
 
+  // @ To Start the animation when component is in view port
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
@@ -78,6 +84,7 @@ const Adventures = () => {
         <div className="experiments">
           <p className="heading">Experiments</p>
           {experiments.map((item) => (
+            // @motion.div for Framer motion animations
             <motion.div
               key={item.id}
               ref={ref}

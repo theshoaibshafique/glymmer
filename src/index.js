@@ -2,6 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
+
+// @fonts for the site
+
 import "./fonts/Executive-45Light.otf";
 import "./fonts/Executive-55Regular.otf";
 import "./fonts/Executive-65Medium.otf";

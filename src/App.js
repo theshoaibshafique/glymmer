@@ -1,10 +1,13 @@
 import "./App.css";
+
 import { motion } from "framer-motion";
 import About from "./components/About/About";
 import Hero from "./components/Hero/Hero";
 import Adventures from "./components/Adventures/Adventures";
 
 function App() {
+  // @  Footer Links can be added more with same Object
+
   const footLinks = [
     {
       id: 1,
@@ -22,11 +25,15 @@ function App() {
 
   return (
     <div className="App">
+      {/* Left Side Of the Site */}
+
       <div className="leftSide">
         <Hero />
         <About />
         <Adventures />
       </div>
+
+      {/* @ Right Side Of the Site with faucet animation and footer links */}
 
       <div className="rightSide">
         <div className="faucetAnimation">
@@ -34,6 +41,7 @@ function App() {
         </div>
         <div className="footerLinks">
           {footLinks.map((item) => (
+            // @ motion.div component of framer motion for adding animations
             <motion.div
               key={item.id}
               initial={{ opacity: 0, translateX: 100 }}

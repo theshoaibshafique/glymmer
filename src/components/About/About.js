@@ -1,9 +1,15 @@
 import React, { useEffect } from "react";
+
+// @ Framer Motion for animations
 import { useAnimation, motion } from "framer-motion";
+
+// @ To see if component is in view port or not
 import { useInView } from "react-intersection-observer";
 
 import "./About.css";
+
 const About = () => {
+  // @ Config for animations
   const variants = {
     hidden: {
       opacity: 0,
@@ -20,6 +26,7 @@ const About = () => {
     },
   };
 
+  // @ To start the animation when component is in view port
   const controls = useAnimation();
   const [ref, inView] = useInView();
 
@@ -32,6 +39,7 @@ const About = () => {
   return (
     <div>
       <div className="aboutContainer">
+        {/* @ motion.div for framer motion animations */}
         <motion.div
           ref={ref}
           initial="hidden"

@@ -1,8 +1,10 @@
 import React from "react";
 import "./Hero.css";
+// @For animations
 import { motion } from "framer-motion";
 
 const Hero = () => {
+  // @Config for the animation of hero section
   const variants = {
     hidden: {
       x: -100,
